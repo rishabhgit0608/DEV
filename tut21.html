@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Alignment Float and Clear</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 700px;
+            border: 3px solid grey;
+            margin: auto;
+            background-color: pink;
+
+        }
+
+        .item {
+            border: 2px solid grey;
+            margin:23px auto;
+            padding: 12px 3px;
+            background-color: peachpuff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #Fruits {
+            float: left;
+            width: 47%;
+
+
+        }
+
+        #Computer {
+            float: right;
+            width: 47%;
+
+        }
+
+        #Stationary {
+
+            clear: both;
+
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+        h1
+        {
+            margin: 23px auto;
+            width :350px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+
+        <div id="Fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="Fruitspara" class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nemo, reiciendis officia nobis culpa fuga
+                beatae rem quaerat quae consectetur! Soluta aperiam vitae possimus minima delectus sunt temporibus
+                beatae praesentium!
+            </p>
+
+        </div>
+        <div id="Computer" class="item">
+            <h3>Computer</h3>
+            <p id="Fruitspara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aspernatur molestiae quas minima
+                voluptate quam possimus, facilis veniam voluptates, consequuntur quia illum ipsum dolor vitae eveniet!
+                Veniam doloribus molestias animi.
+            </p>
+
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="Fruitspara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod porro quo aperiam corrupti sit
+                cupiditate! Voluptates possimus similique voluptatibus ex quia, excepturi dolore unde cum quae obcaecati
+                tenetur eos sit.
+            </p>
+        </div>
+        <div id="Glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="Glasses" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod porro quo aperiam corrupti sit
+                cupiditate! Voluptates possimus similique voluptatibus ex quia, excepturi dolore unde cum quae obcaecati
+                tenetur eos sit.
+            </p>
+        </div>
+
+
+</body>
+
+</html>

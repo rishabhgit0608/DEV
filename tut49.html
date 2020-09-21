@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+
+    <script>
+        let myvar = 45;
+        let myvar2 = true;
+        let myvar3 = null;
+        let myvar4 = "hello world";
+        let myvar5 = undefined;
+        //objects in JS is stored in heap memory and it is storesd in key value pair
+        let employee = {
+            name: "Rishabh",
+            college:"BPIT",
+            rollnum:"42020802818"
+        };
+        console.log(employee);
+       console.log(employee.name);
+       console.log(employee['rollnum']);
+        //let names = [1,2,3,4,true,undefined,"rishabh"]
+       
+        let names = new Array(7,2,3,4,true,undefined,"rishabh");
+        console.log(names);
+        console.log(names.length);
+        names =names.sort();
+        console.log(names);
+
+        names.push("this is pushed");
+        console.log(names);
+
+        
+        
+
+
+
+
+    </script>
+</body>
+
+</html>

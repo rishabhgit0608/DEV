@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Prompt and confirm</title>
+</head>
+<body>
+    
+    <div class="container">
+        this page has nothing but a contianer
+    </div>
+
+    <script>
+       // alert("This is an empty page with a div container");//alert does not return anything  it returns undefined
+
+        //prompt 
+        //let a = prompt("What is your name","");
+        //console.log(a);
+
+        let deletePost = confirm("do you really want to delete the post");
+        if(deletePost)
+            console.log("Post deleted");
+        else
+            console.log("unsuccessful");
+
+    </script>
+</body>
+</html>

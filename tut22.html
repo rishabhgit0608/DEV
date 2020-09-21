@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and more designing</title>
+    <style>
+        .container{
+            border :2px solid red;
+            background-color: pink;
+            padding : 34px;
+            margin :34px auto; 
+            width :700px ;
+        }
+        a{
+            text-decoration: underline;
+
+        }
+        
+        .btn{
+            background-color:purple;
+            padding: 6px;
+            border: null;
+            color: black;
+            cursor: pointer;
+            font-size: small;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color:black;
+            background-color: aliceblue;
+        }
+        .btn:visited{
+            background-color:yellow;
+        }
+        .btn:active{
+            background-color: black;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container" id="division">
+        <h3>Pseudo Selectors</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto amet ducimus optio accusantium eligendi rerum recusandae labore quos quas illum dolore quaerat molestias fugit, deleniti vel numquam eum, sequi voluptatum a cumque quod. Ratione!<a href="http://google.com" target="_blank" class = "btn">Read more</a>
+        </p>
+        
+        <button class= "btn" >Contact us  </button>
+
+    </div>
+</body>
+</html>

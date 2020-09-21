@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid + media queries</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                "navbar navbar navbar"
+                "section section section2"
+                "aside aside aside";
+
+        }
+
+
+
+        .item {
+            border: 4px solid black;
+            background-color: red;
+            padding: 23px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #navbar {
+            justify-self: center;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #section2 {
+            grid-area: section2;
+        }
+
+        #aside {
+            grid-area: aside;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: aquamarine;
+            }
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar"
+                    "section section section"
+                    "section2 section2 section2"
+                    "aside aside aside";
+            }
+
+            #navbar span {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width:300px)and (max-width: 500px) {
+            body {
+                background-color: wheat;
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar"
+                    "section section section"
+                    "section2 section2 section2"
+                    "aside aside aside";
+            }
+
+            #navbar span {
+                display: block;
+
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width: 800px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+                grid-template-areas:
+                    "navbar navbar navbar"
+                    "section section section"
+                    "section2 section2 section2"
+                    "aside aside aside";
+
+            }
+
+
+
+        }
+
+        @media only screen and (min-width: 800px) {
+            body {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="item" id="navbar">
+            <span>Home</span>
+            <span>Services</span>
+            <span>About Us</span>
+            <span>Contact</span>
+        </nav>
+
+        <section class="item" id="section">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ratione facere, numquam
+            exercitationem beatae fugit. Atque doloremque suscipit nesciunt perferendis consectetur, ratione
+            excepturi voluptates repellendus vero velit! Fugit, adipisci deserunt odio ipsam mollitia exercitationem
+            nobis libero doloremque officiis reiciendis molestias laudantium repudiandae itaque ipsum veniam, quos
+            doloribus explicabo ut accusantium facere quo consequatur rerum eius delectus! Dolore, labore architecto
+            aut, repellat tempora ad odio, iste esse quaerat pariatur beatae non. Incidunt, iure ex molestias
+            tenetur cum tempora dolorum. Aspernatur blanditiis minima quasi quis adipisci ipsum cupiditate
+            consequatur eveniet, doloremque quam? Placeat quae quas nostrum, quam nihil eveniet sed quidem sapiente
+            numquam dolor consectetur et exercitationem voluptas, dolore delectus, consequatur velit recusandae odio
+            ratione nam! Cupiditate eum illum impedit deleniti error architecto, consequuntur nam repudiandae rem
+            odit sapiente quod quae nostrum. Consequatur corporis iste nam cumque eum ex. Expedita harum animi
+            dolorum distinctio, similique illo id voluptates sunt inventore! Repellat nam, illo quod nisi cupiditate
+            repellendus mollitia repudiandae nobis enim. Maxime voluptatum dolore architecto delectus, qui molestiae
+            mollitia sed iusto ipsam eaque dolores recusandae voluptatibus esse accusantium perspiciatis odio
+            aperiam libero temporibus. A, quasi deleniti modi consequuntur velit eos ratione numquam corporis
+            laboriosam eaque vero voluptates soluta magni qui et, est non. Neque ducimus iste natus necessitatibus
+            provident. Maiores dolorem dolores culpa, praesentium laudantium fuga reiciendis. Eos magnam quisquam
+            excepturi exercitationem nesciunt esse odit amet, facere placeat doloremque! Quasi vel, fugiat enim vero
+            fugit est iure nesciunt saepe unde voluptate voluptas, soluta pariatur. Reprehenderit iste odit quis
+            neque sed beatae perferendis accusamus, est provident aut! Dolore laborum, ipsa cumque, recusandae quasi
+            omnis minus dolor possimus amet harum porro tempore ad necessitatibus distinctio libero aliquam
+            quibusdam eum dicta molestias repellendus exercitationem autem. Ea debitis asperiores non sed blanditiis
+            magni odio nostrum incidunt libero. Fugit, doloribus laborum? Architecto aperiam dolores vel itaque
+            voluptatibus. Explicabo modi adipisci excepturi rem, deserunt numquam sapiente accusamus itaque
+            similique odio! Iure temporibus reprehenderit quas ipsam saepe magnam iusto quaerat veniam accusantium
+            tenetur, sequi corrupti veritatis alias voluptatem quasi eaque similique esse repudiandae
+            exercitationem. Voluptatibus, nostrum error! Nisi distinctio officiis illum numquam doloremque
+            recusandae repudiandae at dolorum beatae ad rem, soluta corporis a assumenda ducimus, atque, est ea
+            minus. Ratione ducimus harum doloremque quos nostrum modi accusantium amet aperiam repudiandae voluptas
+            rerum, aspernatur iure tenetur, illum, repellat cupiditate animi quasi natus perspiciatis quod. Quos
+            nemo in magnam fugiat eligendi repudiandae perferendis ut ea sint magni expedita rem porro at quisquam
+            illum eum, a sunt odit vero aperiam cupiditate. Omnis saepe delectus perspiciatis reiciendis, ipsa
+            veniam dolore reprehenderit repellendus harum corporis voluptas cum sequi minima est impedit sapiente at
+            dolorem eaque. Earum necessitatibus dolore assumenda, nesciunt veniam id vitae, eos, excepturi tempora
+            ratione minima rerum velit illo cumque unde pariatur. Modi ut quia ducimus temporibus ipsam? Beatae
+            atque excepturi similique iure reiciendis cupiditate? Officiis amet commodi fugiat exercitationem iusto
+            dolores mollitia quibusdam dolor distinctio nam ab provident esse sunt tempora laudantium optio quas,
+            quos facilis aut quod explicabo tempore saepe! Error pariatur molestias dolore rerum alias aperiam
+            soluta necessitatibus distinctio!
+        </section>
+
+        <section class="item" id="section2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus culpa aut minima repellendus nulla
+            id eos aliquid est consectetur neque ullam, natus assumenda similique sed, corrupti maxime dolor iure
+            magni.
+        </section>
+
+
+        <aside class="item" id="aside">
+            Copyright &copy; gmol.com
+        </aside>
+
+
+    </div>
+
+
+</body>
+
+</html>

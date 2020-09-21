@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript String Function</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+    <script>
+        var str = "this is a string";
+        //First Occurence of the substring 
+        var index = str.indexOf('is');
+        console.log(index);
+        //Last Occurence of the substring
+
+        index = str.lastIndexOf('is');
+        console.log(index);
+        var slicing = str.slice(1,7);
+        var subst = str.substr(1,8);//one se lekr 8 length tak le jao 
+        console.log(subst);
+        console.log(slicing);
+       
+        var substring = str.substring(1,7);//Same as Slice but ccant tak enegative values
+        console.log(substring);
+
+        var replaced = str.replace('string','rishabh');
+        console.log(str);
+        console.log(replaced);
+
+        //TOUPPER and tolower
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //concat a new string with the older string
+
+        console.log(str.concat(" New concatinated String"));
+
+        //trim function removes spaces from the starting and from the end
+
+        var withSpaces = "  this is an      example of with spaces    ";
+        var withoutSpaces="this is an ecample of without spaces";
+        console.log(withSpaces.trim());
+        console.log(withoutSpaces);
+
+        //to determine which charcater is at ehich index :charAt same as java
+
+        var  char2 = str.charAt(2);
+        console.log(char2);
+    </script>
+</body>
+</html>

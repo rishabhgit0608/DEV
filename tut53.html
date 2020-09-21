@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating the dom</title>
+</head>
+<body>
+    <div id = "main" class="container">
+        Hey this is my DOM.
+        <ul class ="nav">
+            <li>home</li>
+            <li>organisations</li>
+            <li>teams</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        This is also DOM.
+    </div>
+
+    <script>
+        /*let main = document.getElementById('main');
+        //console.log(main); 
+        let main2 = document.getElementsByClassName('container');
+        console.log(main2);
+        console.log(main2[0]);*/
+        let main3 = document.querySelector('.nav');
+        console.log(main3);
+        let main4 = document.querySelectorAll('.nav>li');//query selector is used to navigate DOM classes and IDs 
+        console.log(main4);
+        
+    </script>
+    
+</body>
+</html>

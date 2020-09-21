@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+</head>
+    <style>
+        div>p{
+            color: black ;
+            border: 2px solid red;
+        }
+        div+p{
+            color:white;
+            background-color:red;
+            
+        }
+    </style>
+
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <p>This is a paragraph
+            </p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+
+    <style>
+        .container {
+            display: flex;
+            padding: 23px;
+            ;
+        }
+
+        .card {
+            /*box-shadow: offsetX offsetY blur-radius spread-radius color;*/
+            padding: 23px 12px;
+            border: 2px solid red;
+            margin: 23px 12px;
+            background-color: skyblue;
+            box-shadow: 10px 13px pink;
+            box-shadow: -10px -13px 25px deeppink;
+            box-shadow: 10px 13px 10px 23px pink;
+            /*for shadow inside box*/
+            box-shadow: inset 3px 5px black;
+        }
+        .card h2{
+            text-shadow: 1px 1px blue;
+            text-shadow: 1px 1px 9px blue;
+        }
+        
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>I am an Iphone</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum cum necessitatibus, deserunt
+                asperiores tempore eius alias eum itaque dolore odio modi ea nemo architecto dolorem rerum omnis esse
+                reprehenderit sunt totam minus magni atque?
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>i Have an ipad</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, molestiae enim magnam voluptatem
+                maxime aperiam, quis commodi quo blanditiis quisquam distinctio quia officiis corporis repellat ab
+                architecto, tempore laborum tempora.
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>i have computer</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, obcaecati aut laudantium consequuntur
+                qui sequi numquam quae natus rem earum, ratione sapiente quo expedita modi praesentium harum doloribus.
+                Minima excepturi hic ex facilis error.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

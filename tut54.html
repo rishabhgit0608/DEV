@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS events</title>
+    <style>
+        #btn {
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+            padding: 23px;
+            margin: 23px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Events means kuch hua hai example when you hit subscribe it tells kuch hua hai -->
+    <!-- Events hai toh event listener b hoga Browser Even -->
+    <!-- Types of Event
+    Browser events :
+    click :
+    contextmenu:
+    mouseover/mouseout:
+    mousedown/mouseup
+    mousemove
+    form:submit,focus,DOM content loaded,
+    transition:CSS; -->
+    <h1>This is my heading</h1>
+    <div class="container">
+
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, eos. Aliquid, tempore
+            recusandae! Voluptatum perferendis totam ut. Consequatur maiores quasi officia deserunt voluptate sapiente
+            quis odit architecto praesentium iure harum doloremque suscipit, quod eaque repellat sed qui! Iusto
+            laboriosam tempore illo impedit error distinctio autem! Iure dolorum commodi fugiat, sunt rerum deserunt
+            sint sit culpa non expedita sapiente, accusamus nam molestiae laborum, optio rem aspernatur? Est
+            perspiciatis exercitationem doloremque ab, deleniti commodi inventore aut quis numquam voluptatem deserunt,
+            sapiente debitis hic iure illum. Doloremque quasi dicta vitae vel architecto eligendi a repudiandae repellat
+            expedita sed dignissimos nisi, ipsum consectetur ut perferendis unde dolores adipisci laudantium saepe quia
+            repellendus nobis magni recusandae doloribus. Aut a rem quo tempore quod eaque, dignissimos obcaecati quos
+            accusantium itaque quibusdam suscipit nam illo necessitatibus quasi! Voluptatibus a accusantium rem officiis
+            eaque doloremque unde quis dolor! Vel, excepturi reiciendis. Neque consectetur a illo minima exercitationem,
+            iste recusandae at vitae soluta similique molestiae quam deleniti quidem culpa quae quod modi odio vero
+            cupiditate incidunt sapiente tenetur eligendi. In voluptate doloremque nesciunt accusamus omnis quisquam
+            vero neque beatae? Ipsa iure doloremque neque sed libero consequatur doloribus sint praesentium? Fugit
+            pariatur et ullam sit vitae. Dolor omnis enim veritatis magnam maxime dicta pariatur obcaecati nulla
+            provident, sint nobis aliquid excepturi officia eligendi, amet voluptatibus! Eius libero eum, consequuntur
+            reprehenderit, nisi sint sunt laborum magnam tempore aliquid quae doloribus molestias debitis illo eaque.
+            Nobis sed ipsum ex saepe quidem dolorum tempora laborum. Debitis eum laudantium hic quas possimus eaque
+            architecto exercitationem saepe, harum illo illum reiciendis? Saepe velit aperiam aliquid eaque esse maxime
+            libero laboriosam? Tempore deleniti id recusandae aspernatur, atque quaerat vero tenetur consectetur
+            inventore in repellendus adipisci nulla ea veritatis. Reiciendis perspiciatis ut quia molestias
+            necessitatibus quam non eveniet ipsam. Quae nemo ab reprehenderit corporis iure aspernatur nihil facere
+            laborum cupiditate! Cumque vitae libero eveniet modi eos hic temporibus aliquam officia sunt ducimus
+            suscipit necessitatibus, doloribus nisi itaque! Temporibus quos explicabo porro dignissimos consectetur in
+            aliquid dolore inventore aut maxime deserunt ipsam velit quisquam quidem eveniet eaque, nemo ratione
+            mollitia, sint vero. Molestias, iure ex harum perspiciatis ea itaque in quos quia unde modi similique
+            laboriosam eos! Saepe, quod? Nobis sunt voluptate reprehenderit voluptatum quas rem fugiat excepturi
+            molestias veritatis quisquam officiis eligendi commodi, dolore nihil beatae vel asperiores ea debitis ab
+            porro accusantium consequuntur eaque. Quo ut error perferendis provident quia et exercitationem rerum maxime
+            nostrum quod rem tenetur earum culpa non assumenda laborum doloremque eaque expedita, sunt veniam omnis
+            tempora dicta! Aliquid atque quidem facilis nobis rem veritatis quaerat iure asperiores eligendi quam
+            similique eos aliquam delectus cupiditate itaque rerum, ab perspiciatis nulla quos eveniet? Sit pariatur
+            aliquam, nemo unde debitis natus harum suscipit? Nemo nisi voluptatibus expedita iure possimus culpa
+            accusantium. Voluptas quia mollitia enim dolorum illo beatae recusandae facilis veniam, consectetur ea
+            culpa, laboriosam ducimus eaque. Distinctio similique debitis cumque dolorum quo repudiandae iusto
+            voluptatem blanditiis quam maiores ab, aliquid non dolore veritatis illo corrupti optio quod beatae porro!
+            Atque fugit iste tenetur sapiente?</p>
+    </div>
+    <button id="btn" onclick="Blowjob()">Show Hide
+    </button>
+    <script>
+        /*function Blowjob() {
+            let btn = document.getElementById("btn");
+            let para = document.querySelector('#para');
+           /* if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+        }
+        }*/
+        let para = document.querySelector('#para');
+        para.addEventListener('mouseover',function runMouseOver(){
+            alert("Mouse Inside");
+        });
+        para.addEventListener('mouseout',function runMouseOver(){
+            alert("Mouse Outside");
+        });
+
+
+        
+        
+    </script>
+
+</body>
+
+</html>

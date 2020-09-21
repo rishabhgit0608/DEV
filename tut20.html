@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:aquamarine;
+        }
+        .container{
+            background-color : pink;
+            border:3px dotted rgb(1, 238, 255);
+            /*padding :79px;padding can be done with top left bottom right*/
+            /*margin: 34px;margin can be done with top left bottom right */
+            padding:34px 14px;
+            margin :34px 14px ;
+            border-radius: 14px;
+            /*Property : Box Sizing*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        This is for Box model 
+    </h3>
+    <div class="container">
+        <p id = thirdpara>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, debitis sed hic asperiores quis impedit fugiat. Culpa eos, natus molestiae repellendus officiis voluptas!
+        </p>
+    </div>
+    <div class="container">
+        <p id = secondpara>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, debitis sed hic asperiores quis impedit fugiat. Culpa eos, natus molestiae repellendus officiis voluptas!</p>
+    </div>
+    <div class="container">
+       <p id = firstpara>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, debitis sed hic asperiores quis impedit fugiat. Culpa eos, natus molestiae repellendus officiis voluptas!</p>
+    </div>
+
+    
+</body>
+</html>

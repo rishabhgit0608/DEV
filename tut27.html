@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Board</title>
+    <style>
+        .container
+        {
+            height : 544px ; 
+            width: 100%;;
+            border: 2px solid red ;
+            padding:5px;
+            display :flex;
+            
+            /*Initialsie the contianer as a flex box*/
+
+            /*Flex Properties for flex container*/
+           /*
+            flex-direction: column; /*Row is selected by default*/
+           /* flex-direction: row-reverse;/*Reverse is nothing but flex container stars filling from the end*/
+           /* flex-direction: column-reverse;
+            flex-direction: row;
+            /*For Responsivenss*/
+           /* flex-wrap: wrap;/*Wrap Reverse for reverse wrapping by default it goes nowrap*/
+
+
+            /*Short hand for flex direction and flex wrap*/
+            /*flex-flow: row wrap;
+
+            /*Centerally alignments of elements*/
+           /* justify-content: center;
+            /*SPace between Flex items*/
+           /* justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+
+            /*Align items Property*/
+
+           /* align-items: center; /*Imoprtant as they center items vertically*/ 
+            /*align-items: end;
+            align-items: start;/*start*/
+           /* align-items: stretch;*/
+           
+            
+
+
+
+        }
+        .items{
+            background-color: tomato;
+            border:2px solid red ; 
+            margin:3px;
+            padding:3px;
+            width:200px;
+            height: 50%;
+        }
+        /*Flex item properties*/
+         
+        #item1{
+            /*order: 2;/*Item goes at the end on priority basis  higher the order later it shoes up in the container*/
+            /*flex-grow: 3;/*if the item got a chance to get bigger in responsive ness then it grows according to the number entered higher the number entered higher will bw the flec growth*/
+            /*flex-shrink:3 ;/*Reciprocal of flex grow*/
+            flex-basis: 320px;
+            /*When flex direction is set to row direction then it will control the width which is also by default*/
+            /*When flex direction is set to column direction then it will control the height;*/
+            order:2;
+
+        }
+        
+        #item3{
+            /*flex-grow: 500;*/
+            /*ShortHand
+            
+            /*flex:flexgrow flex shrink flex basis*/
+            /*flex:2 2 230px;*/
+            order:1;
+            align-self: flex-end;/*+flexstart flexcenter*/
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        This is a FlexBox Tutorial
+    </h1>
+    <div class="container">
+        <div class="items" id="item1">first box</div>
+        <div class="items" id="item2">Seccond bx</div>
+        <div class="items" id="item3">ThirdBox</div>
+        
+    </div>
+
+    
+</body>
+</html>

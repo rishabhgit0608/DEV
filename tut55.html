@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript setTimeOut and ClearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        this is time Right Now <span id = time></span>
+    </div>
+    <script>
+        function greet(name){
+            console.log("This is tutorial 55 "+ name);
+        }
+
+        //let timeout = setTimeout(greet,2000,'harry');
+       let intervalId =setInterval(greet,1000,"harry");
+       clearInterval(intervalId);
+       function displayTime(){
+           let time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+            
+        }
+       //setInterval(displayTime,1000);
+        let dt =new Date();
+        console.log(dt);
+        let day = dt.getDate();
+        let month = dt.getMonth();
+        let year = dt.getFullYear();
+        let hours = dt.getHours();
+        console.log(month);
+        console.log(day);
+        console.log(year);
+        console.log(hours);
+
+    </script>
+    
+</body>
+</html>
